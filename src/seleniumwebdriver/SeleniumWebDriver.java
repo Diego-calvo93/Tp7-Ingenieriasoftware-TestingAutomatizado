@@ -49,7 +49,10 @@ new Select(driver.findElement(By.name("toPort"))).selectByVisibleText("Paris");
 // ERROR: Caught exception [Error: Dom locators are not implemented yet!]
 driver.findElement(By.name("findFlights")).click();
 driver.findElement(By.name("reserveFlights")).click();
-        
+        driver.findElement(By.name("passFirst0")).clear();
+driver.findElement(By.name("passFirst0")).sendKeys("Diego");
+driver.findElement(By.name("passLast0")).clear();
+driver.findElement(By.name("passLast0")).sendKeys("Calvo");
         
     }
     
