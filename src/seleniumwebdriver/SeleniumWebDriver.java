@@ -39,7 +39,10 @@ public class SeleniumWebDriver {
          driver.get(ul + "/mercurywelcome.php");
     
         
-        
+        driver.findElement(By.name("userName")).clear();
+driver.findElement(By.name("userName")).sendKeys("ingsoftware");
+driver.findElement(By.name("password")).clear();
+driver.findElement(By.name("password")).sendKeys("ingsoftware");
         
         
     }
