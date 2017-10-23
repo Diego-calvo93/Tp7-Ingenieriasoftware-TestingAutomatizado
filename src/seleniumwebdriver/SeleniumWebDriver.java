@@ -43,6 +43,12 @@ public class SeleniumWebDriver {
 driver.findElement(By.name("userName")).sendKeys("ingsoftware");
 driver.findElement(By.name("password")).clear();
 driver.findElement(By.name("password")).sendKeys("ingsoftware");
+driver.findElement(By.name("login")).click();
+new Select(driver.findElement(By.name("fromPort"))).selectByVisibleText("London");
+new Select(driver.findElement(By.name("toPort"))).selectByVisibleText("Paris");
+// ERROR: Caught exception [Error: Dom locators are not implemented yet!]
+driver.findElement(By.name("findFlights")).click();
+driver.findElement(By.name("reserveFlights")).click();
         
         
     }
