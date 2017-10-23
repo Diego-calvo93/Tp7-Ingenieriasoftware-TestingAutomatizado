@@ -53,6 +53,10 @@ driver.findElement(By.name("reserveFlights")).click();
 driver.findElement(By.name("passFirst0")).sendKeys("Diego");
 driver.findElement(By.name("passLast0")).clear();
 driver.findElement(By.name("passLast0")).sendKeys("Calvo");
+driver.findElement(By.name("creditnumber")).clear();
+driver.findElement(By.name("creditnumber")).sendKeys("123456");
+driver.findElement(By.name("buyFlights")).click();
+driver.findElement(By.linkText("SIGN-OFF")).click();
         
     }
     
